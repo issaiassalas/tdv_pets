@@ -11,3 +11,4 @@ class Pet(models.Model):
     last_name = fields.Char(string = 'Apellido', default='Garcia')
 
     owner = fields.Many2one('res.partner', string='Propietario')
+    action_ids = fields.One2many('pet.action', 'pet_id', string='Bitacora')
