@@ -4,7 +4,7 @@
     'version': '0.0.1',
     'description': 'Cosas de mascotas',
     'summary': 'Sumario de cosas de mascotas',
-    'depends': ['base'],
+    'depends': ['base', 'note'],
     'license': 'LGPL-3',
     'installable': True,
     'application': True,
