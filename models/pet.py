@@ -10,3 +10,4 @@ class Pet(models.Model):
     breed = fields.Char(string = 'Raza de la mascota', help='Aqui va la raza')
 
     owner = fields.Many2one('res.partner', string='Propietario')
+    action_ids = fields.One2many('pet.action', 'pet_id', string='Bitacora')

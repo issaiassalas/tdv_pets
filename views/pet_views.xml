@@ -8,11 +8,20 @@
             <form string="">
                 <sheet>
                     <group>
-                        <field name="name" />
-                        <field name="age" />
-                        <field name="breed" />
-                        <field name="owner" />
+                        <group name="propeties" string="Datos de la mascota">
+                            <field name="name" />
+                            <field name="age" />
+                            <field name="breed" />
+                        </group>
+                        <group name="propeties" string="Propietario">
+                            <field name="owner" />
+                        </group>
                     </group>
+                    <notebook>
+                        <page name="actions" string="Acciones">
+                            <field name="action_ids"/>
+                        </page>
+                    </notebook>
                 </sheet>
             </form>
         </field>

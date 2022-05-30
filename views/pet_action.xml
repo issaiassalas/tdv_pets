@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="pet_action_action" model="ir.actions.act_window">
+        <field name="name">Bitacora</field>
+        <field name="res_model">pet.action</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="pet_action_view_tree" model="ir.ui.view">
+        <field name="name">pet.action.view.tree</field>
+        <field name="model">pet.action</field>
+        <field name="arch" type="xml">
+            <tree string="" editable="bottom">
+                <field name="name" />
+                <field name="write_date" />
+            </tree>
+        </field>
+    </record>
+
+</odoo>
