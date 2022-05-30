@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+tdv_pets.access_pet,access_pet,tdv_pets.model_pet,base.group_user,1,1,1,1
