@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="pet_action_report">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="pet">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <h1>Datos</h1>
+                        <div class="d-block">
+                            <div class="d-inline-block">
+                                <p class="">Nombre: <span t-esc="pet.name"/></p>
+                                <p class="">Edad: <span t-esc="pet.age"/></p>
+                                <p class="">Raza: <span t-esc="pet.breed"/></p>
+                            </div>
+                            <div class="d-inline-block">
+                                <p class="">Propietario: <span t-esc="pet.owner.name"/></p>
+                            </div>
+                        </div>
+                        <h2>Acciones</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Accion</th>
+                                    <th>Fecha</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <t t-foreach="pet.action_ids" t-as="action">
+                                    <tr>
+                                        <td><span t-esc="action.name"/></td>
+                                        <td><span t-esc="action.create_date"/></td>
+                                    </tr>
+                                </t>
+                            </tbody>
+                        </table>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+</odoo>

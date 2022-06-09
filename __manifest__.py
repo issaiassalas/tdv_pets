@@ -10,6 +10,7 @@
     'application': True,
     'data': [
         'security/ir.model.access.csv',
+        'reports/pet_action_report.xml',
         'views/pet_action.xml',
         'views/pet_views.xml',
         'views/menu.xml',

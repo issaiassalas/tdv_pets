@@ -46,4 +46,16 @@
         <field name="view_mode">tree,form</field>
     </record>
 
+    <record id="pet_action_report_action" model="ir.actions.report">
+        <field name="name">Reporte de mascotita</field>
+        <field name="model">pet</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">tdv_pets.pet_action_report</field>
+        <field name="report_file">tdv_pets.pet_action_report</field>
+        <field name="print_report_name">'actions ' + object.name</field>
+        <field name="binding_model_id" ref="tdv_pets.model_pet"/>
+        <field name="binding_type">report</field>
+    </record>
+
+
 </odoo>
